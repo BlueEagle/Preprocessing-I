@@ -216,6 +216,11 @@ body .container .container-top header #profile {
   background: #09B9CE;
   padding: 5%;
 }
+html .container .container-top header #profile img,
+body .container .container-top header #profile img {
+  width: 200px;
+  border-radius: 100px;
+}
 html .container .container-top header nav,
 body .container .container-top header nav {
   align-self: center;
