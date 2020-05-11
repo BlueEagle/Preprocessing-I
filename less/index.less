@@ -23,8 +23,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+	// font: inherit;
+	font-size: 62.5%;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -61,18 +61,84 @@ table {
 @gray: #696373;
 @gray-bar: #5B5E66;
 @default-font: 'Heebo', sans-serif;
+@border-radius: 20px;
+
+// Snippets
+.flex-down {
+	display: flex;
+	flex-direction: column;
+}
 
 html, body {
 		height: 100%;
 		background: #EFEFEF;
 		padding: 3% 5%;
+		font-family: @default-font;
+		line-height: 1.5;
 
 		.container {
-			background: white;
-			border: 1px solid black;
-			border-radius: 10px;
-			font-family: @default-font;
+			display: flex;
+			justify-content: center;
 
+			p {
+				font-size: 1.6rem;
+			}
+
+			h1 {
+				font-weight: bold;
+				font-size: 2.6rem;
+			}
+			h2 {
+				font-size: 1.4rem;
+				color: white;
+			}
+			h3 {
+				font-weight: bold;
+				font-size: 1.6rem;
+				color: @orange;
+				line-height: 3;
+			}
+			h4 {
+				font-weight: bold;
+				font-size: 1.4rem;
+				// margin-bottom: 3%;
+			}
+		}
+
+		header {
+			flex-basis: 25%;
+			margin: 3%;
+
+			.profile {
+				.flex-down();
+				align-items: center;
+				border-radius: @border-radius;
+				background: @orange;
+				padding: 5%;
+			}
+
+			.contact {
+				.flex-down();
+				padding: 10%;
+
+				p, a, a:hover {
+					font-size: 1.4rem;
+					text-decoration: none;
+					color: @gray;
+				}
+
+			}
+		}
+
+		section {
+			flex-basis: 25%;
+			margin: 3%;
+
+			div {
+				background: white;
+				padding: 5% 10%;
+				border-radius: @border-radius;
+			}
 		}
 }
 

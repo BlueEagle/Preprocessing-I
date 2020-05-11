@@ -93,8 +93,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
+  font-size: 62.5%;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -133,16 +132,87 @@ table {
 * {
   box-sizing: border-box;
 }
+.flex-down {
+  display: flex;
+  flex-direction: column;
+}
 html,
 body {
   height: 100%;
   background: #EFEFEF;
   padding: 3% 5%;
+  font-family: 'Heebo', sans-serif;
+  line-height: 1.5;
 }
 html .container,
 body .container {
+  display: flex;
+  justify-content: center;
+}
+html .container p,
+body .container p {
+  font-size: 1.6rem;
+}
+html .container h1,
+body .container h1 {
+  font-weight: bold;
+  font-size: 2.6rem;
+}
+html .container h2,
+body .container h2 {
+  font-size: 1.4rem;
+  color: white;
+}
+html .container h3,
+body .container h3 {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #FF7948;
+  line-height: 3;
+}
+html .container h4,
+body .container h4 {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+html header,
+body header {
+  flex-basis: 25%;
+  margin: 3%;
+}
+html header .profile,
+body header .profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: #FF7948;
+  padding: 5%;
+}
+html header .contact,
+body header .contact {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+}
+html header .contact p,
+body header .contact p,
+html header .contact a,
+body header .contact a,
+html header .contact a:hover,
+body header .contact a:hover {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #696373;
+}
+html section,
+body section {
+  flex-basis: 25%;
+  margin: 3%;
+}
+html section div,
+body section div {
   background: white;
-  border: 1px solid black;
-  border-radius: 10px;
-  font-family: 'Heebo', sans-serif;
+  padding: 5% 10%;
+  border-radius: 20px;
 }
