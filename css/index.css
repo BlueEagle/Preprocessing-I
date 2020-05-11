@@ -253,6 +253,12 @@ html .container .container-top section #education ul,
 body .container .container-top section #education ul {
   font-size: 3rem;
 }
+@media (max-width: 500px) {
+  html .container .container-top,
+  body .container .container-top {
+    flex-direction: column;
+  }
+}
 html .container hr,
 body .container hr {
   border: 1px solid #5B5E66;
