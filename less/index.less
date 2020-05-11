@@ -4,6 +4,9 @@
    License: none (public domain)
 */
 
+// Fonts (Heebo)
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,6 +56,12 @@ table {
     box-sizing: border-box;
 }
 
+// Variables
+@orange: #FF7948;
+@gray: #696373;
+@gray-bar: #5B5E66;
+@default-font: 'Heebo', sans-serif;
+
 html, body {
 		height: 100%;
 		background: #EFEFEF;
@@ -62,6 +71,8 @@ html, body {
 			background: white;
 			border: 1px solid black;
 			border-radius: 10px;
+			font-family: @default-font;
+
 		}
 }
 
