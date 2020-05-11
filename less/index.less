@@ -185,6 +185,16 @@ html, body {
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-start;
+
+			.reference {
+				@media (max-width: 500px) {
+					margin: 5% 0;
+				}
+			}
+
+			@media (max-width: 500px) {
+				flex-wrap: wrap;
+			}
 		}
 	}
 }

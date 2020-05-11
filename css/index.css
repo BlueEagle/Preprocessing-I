@@ -273,3 +273,15 @@ body .container footer {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media (max-width: 500px) {
+  html .container footer .reference,
+  body .container footer .reference {
+    margin: 5% 0;
+  }
+}
+@media (max-width: 500px) {
+  html .container footer,
+  body .container footer {
+    flex-wrap: wrap;
+  }
+}
