@@ -136,120 +136,132 @@ table {
   display: flex;
   flex-direction: column;
 }
+.third {
+  flex-basis: 30%;
+}
 html,
 body {
+  height: 100%;
+  background: #EFEFEF;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
-  background: #EFEFEF;
+}
+html .container,
+body .container {
   padding: 3% 5%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: 'Heebo', sans-serif;
   line-height: 1.5;
 }
-html p,
-body p,
-html a,
-body a,
-html a:hover,
-body a:hover {
+html .container p,
+body .container p,
+html .container a,
+body .container a,
+html .container a:hover,
+body .container a:hover {
   font-size: 1.6rem;
   text-decoration: none;
-  color: black;
+  color: #696373;
 }
-html ul,
-body ul,
-html ol,
-body ol {
+html .container ul,
+body .container ul,
+html .container ol,
+body .container ol {
   margin-left: 5%;
   color: #696373;
   font-size: 2rem;
 }
-html h1,
-body h1 {
+html .container h1,
+body .container h1 {
   font-weight: bold;
   font-size: 2.6rem;
 }
-html h2,
-body h2 {
+html .container h2,
+body .container h2 {
   font-size: 1.4rem;
   color: white;
 }
-html h3,
-body h3 {
+html .container h3,
+body .container h3 {
   font-weight: bold;
   font-size: 1.6rem;
-  color: #FF7948;
+  color: #09B9CE;
   line-height: 3;
 }
-html h4,
-body h4 {
+html .container h4,
+body .container h4 {
   font-weight: bold;
   font-size: 1.4rem;
 }
-html .container,
-body .container {
+html .container .container-top,
+body .container .container-top {
   display: flex;
   justify-content: center;
 }
-html header,
-body header {
-  flex-basis: 25%;
+html .container .container-top header,
+body .container .container-top header {
+  flex-basis: 30%;
   margin: 3%;
 }
-html header #profile,
-body header #profile {
+html .container .container-top header #profile,
+body .container .container-top header #profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 20px;
-  background: #FF7948;
+  background: #09B9CE;
   padding: 5%;
 }
-html header nav,
-body header nav {
+html .container .container-top header nav,
+body .container .container-top header nav {
   align-self: center;
   display: flex;
   justify-content: space-around;
 }
-html header #contact,
-body header #contact {
+html .container .container-top header #contact,
+body .container .container-top header #contact {
   display: flex;
   flex-direction: column;
   padding: 10%;
 }
-html header #contact p,
-body header #contact p,
-html header #contact a,
-body header #contact a,
-html header #contact a:hover,
-body header #contact a:hover {
+html .container .container-top header #contact p,
+body .container .container-top header #contact p,
+html .container .container-top header #contact a,
+body .container .container-top header #contact a,
+html .container .container-top header #contact a:hover,
+body .container .container-top header #contact a:hover {
   font-size: 1.4rem;
   text-decoration: none;
   color: #696373;
 }
-html section,
-body section {
-  flex-basis: 25%;
-  margin: 3%;
+html .container .container-top section,
+body .container .container-top section {
+  flex-basis: 30%;
 }
-html section div,
-body section div {
+html .container .container-top section div,
+body .container .container-top section div {
   background: white;
   padding: 5% 10%;
   border-radius: 20px;
+  margin: 3%;
 }
-html section #education ul,
-body section #education ul {
+html .container .container-top section #education ul,
+body .container .container-top section #education ul {
   font-size: 3rem;
 }
-hr {
+html .container hr,
+body .container hr {
   border: 1px solid #5B5E66;
   width: 90%;
   border-radius: 20px;
   margin: 5% 0;
 }
-footer {
+html .container footer,
+body .container footer {
   width: 90%;
   display: flex;
   justify-content: space-between;
