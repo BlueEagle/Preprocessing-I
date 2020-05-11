@@ -239,6 +239,10 @@ body section div {
   padding: 5% 10%;
   border-radius: 20px;
 }
+html section #education ul,
+body section #education ul {
+  font-size: 3rem;
+}
 hr {
   border: 1px solid #5B5E66;
   width: 90%;
