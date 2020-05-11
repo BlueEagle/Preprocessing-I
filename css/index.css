@@ -218,6 +218,7 @@ body .container .container-top header #profile {
 }
 html .container .container-top header #profile img,
 body .container .container-top header #profile img {
+  position: relative;
   width: 200px;
   border-radius: 100px;
 }
