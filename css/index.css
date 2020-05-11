@@ -138,50 +138,67 @@ table {
 }
 html,
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100%;
   background: #EFEFEF;
   padding: 3% 5%;
   font-family: 'Heebo', sans-serif;
   line-height: 1.5;
 }
-html .container,
-body .container {
-  display: flex;
-  justify-content: center;
-}
-html .container p,
-body .container p {
+html p,
+body p,
+html a,
+body a,
+html a:hover,
+body a:hover {
   font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
 }
-html .container h1,
-body .container h1 {
+html ul,
+body ul,
+html ol,
+body ol {
+  margin-left: 5%;
+  color: #696373;
+  font-size: 2rem;
+}
+html h1,
+body h1 {
   font-weight: bold;
   font-size: 2.6rem;
 }
-html .container h2,
-body .container h2 {
+html h2,
+body h2 {
   font-size: 1.4rem;
   color: white;
 }
-html .container h3,
-body .container h3 {
+html h3,
+body h3 {
   font-weight: bold;
   font-size: 1.6rem;
   color: #FF7948;
   line-height: 3;
 }
-html .container h4,
-body .container h4 {
+html h4,
+body h4 {
   font-weight: bold;
   font-size: 1.4rem;
+}
+html .container,
+body .container {
+  display: flex;
+  justify-content: center;
 }
 html header,
 body header {
   flex-basis: 25%;
   margin: 3%;
 }
-html header .profile,
-body header .profile {
+html header #profile,
+body header #profile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -189,18 +206,24 @@ body header .profile {
   background: #FF7948;
   padding: 5%;
 }
-html header .contact,
-body header .contact {
+html header nav,
+body header nav {
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+}
+html header #contact,
+body header #contact {
   display: flex;
   flex-direction: column;
   padding: 10%;
 }
-html header .contact p,
-body header .contact p,
-html header .contact a,
-body header .contact a,
-html header .contact a:hover,
-body header .contact a:hover {
+html header #contact p,
+body header #contact p,
+html header #contact a,
+body header #contact a,
+html header #contact a:hover,
+body header #contact a:hover {
   font-size: 1.4rem;
   text-decoration: none;
   color: #696373;
@@ -215,4 +238,16 @@ body section div {
   background: white;
   padding: 5% 10%;
   border-radius: 20px;
+}
+hr {
+  border: 1px solid #5B5E66;
+  width: 90%;
+  border-radius: 20px;
+  margin: 5% 0;
+}
+footer {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
